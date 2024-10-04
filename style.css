@@ -1,0 +1,156 @@
+body {
+    background-color: #e0f7fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh;
+    background-image: linear-gradient(to right, #56ccf2, #2f80ed);
+    overflow-y: auto;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 30px;
+    position:relative;
+    margin-top: 20px; 
+    z-index: 1000; 
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.input-container {
+    margin-bottom: 25px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1f78b4;
+    transform: translateY(-2px);
+}
+
+.notes-list {
+    margin-top: 120px;
+    max-height: none; 
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+.note {
+    background-color: #f1f1f1;
+    border-left: 6px solid #3498db;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+}
+
+.note.done {
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.note h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.note p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.note h3:hover {
+    text-decoration: underline;
+}
+
+.actions {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.actions button {
+    width: auto;
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.actions .btn-warning {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.actions .btn-warning:hover {
+    background-color: #d4ac0d;
+}
+
+.actions .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.actions .btn-danger:hover {
+    background-color: #c0392b;
+}
